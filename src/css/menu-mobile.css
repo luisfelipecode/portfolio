@@ -1,0 +1,94 @@
+#btn-mobile {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	#menu {
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 70px;
+		right: 0;
+		background: #121212;
+		-webkit-transition: 0.6s;
+		-o-transition: 0.6s;
+		transition: 0.6s;
+		z-index: 1000;
+		height: 0;
+		visibility: hidden;
+		overflow-y: hidden;
+	}
+
+	#nav.active #menu {
+		height: calc(100vh - 70px);
+		visibility: visible;
+		overflow-y: auto;
+	}
+
+	#menu a {
+		padding: 1rem 0;
+		margin: 0 1rem;
+		border-bottom: 2px solid rgb(0 0 0 / 5%);
+	}
+
+	#btn-mobile {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding: 0.5rem 1rem;
+		font-size: 1rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+		gap: 0.5rem;
+		color: #fff;
+	}
+
+	#hamburger {
+		border-top: 2px solid;
+		width: 30px;
+	}
+
+	#hamburger::after,
+	#hamburger::before {
+		content: '';
+		display: block;
+		width: 30px;
+		height: 2px;
+		background: currentcolor;
+		margin-top: 5px;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+		position: relative;
+	}
+
+	#nav.active #hamburger {
+		border-top-color: transparent;
+	}
+
+	#nav.active #hamburger::before {
+		-webkit-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+
+	#nav.active #hamburger::after {
+		-webkit-transform: rotate(-135deg);
+		-ms-transform: rotate(-135deg);
+		transform: rotate(-135deg);
+		top: -7px;
+	}
+
+	.menu li a::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: '';
+	}
+
+	.menu li a:hover::after,
+	.menu li a.active::after {
+		width: 25%;
+	}
+}
