@@ -2,11 +2,11 @@
   💻<br>Meu Portfólio
 </h1>
 
-<img src="./src/img/preview.png" alt="Meu Portfólio" align="center" width="500px" />
+![Resultado final do projeto](./src/img/preview.png)
 
 &#xa0;
 
-[Clique para Visitar o Projeto]()
+<h4 align="center"><a href="">Clique para visitar o projeto</a></h4>
 
 <br>
 
