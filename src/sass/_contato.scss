@@ -1,0 +1,125 @@
+.contato {
+	background: $color-dark;
+	width: 100%;
+	height: auto;
+	color: $color_4;
+
+	.contato-container {
+		max-width: 1150px;
+		margin: auto;
+		padding: 20px;
+
+		h2 {
+			font-family: $font-family_1;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 29px;
+			text-transform: uppercase;
+			color: $color_4;
+			margin: 30px 0;
+			padding: 40px 0;
+			text-align: center;
+		}
+
+		.form {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			max-width: 100%;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin: auto;
+
+			input[type="text"] {
+				border-width: 2px;
+				border-style: solid;
+				-o-border-image: $color-gradient-purple;
+				border-image: $color-gradient-purple;
+				border-image-slice: 1;
+				background: #121212;
+				font-size: 1rem;
+				color: $color_4;
+				padding: 15px;
+				border-radius: 4px;
+				margin: auto;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+
+			.input-group {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				margin: auto;
+				margin-bottom: 20px;
+				max-width: 100%;
+				width: 500px;
+
+
+				label {
+					padding: 10px 0;
+				}
+
+				input[type="text"] {
+					&:hover {
+						border: 2px solid;
+						-o-border-image: -o-linear-gradient(left, darkblue, darkorchid) 1;
+						border-image: -webkit-gradient(linear, left top, right top, from(darkblue), to(darkorchid)) 1;
+						border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+						border-image-slice: 1;
+						background: #121212;
+						font-size: 1rem;
+						color: $color_4;
+					}
+				}
+
+				input[type="text"] {
+					&:focus {
+						border: 2px solid;
+						-o-border-image: -o-linear-gradient(left, darkblue, darkorchid) 1;
+						border-image: -webkit-gradient(linear, left top, right top, from(darkblue), to(darkorchid)) 1;
+						border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+						border-image-slice: 1;
+						background: #121212;
+						font-size: 1rem;
+						color: $color_4;
+					}
+				}
+
+				.input-msg {
+					padding: 1.875rem .9375rem;
+				}
+			}
+
+			.btn-contato {
+				border-radius: 8px;
+				font-size: 1rem;
+				padding: 15px;
+				color: $color_4;
+				margin: auto;
+				width: 300px;
+				border: 2px solid #002bff;
+				-webkit-transition: 0.6s;
+				-o-transition: 0.6s;
+				transition: 0.6s;
+				margin-bottom: 1.25rem;
+
+				&:hover {
+					color: $color_4;
+					border-radius: 8px;
+					background: #2407c9;
+				}
+			}
+		}
+	}
+}

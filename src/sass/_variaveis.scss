@@ -1,0 +1,127 @@
+$color_5: #000;
+$color_1: #151515;
+$color_4: #fff;
+$background-color_1: #9358f7;
+$background-color_2: #0000002c;
+$color-gradient-pink: linear-gradient(270.06deg, #6518b4 0%, #d24074 101.62%);
+$color-dark: #121212;
+$color-gray-light: #c4c4c4;
+$color-blue: #00d2df;
+$color-gradient-purple: linear-gradient(269.96deg, #10d7e2 0%, #9358f7 100%);
+$font-family_1: "Inter",
+arial,
+helvetica,
+verdana,
+sans-serif;
+
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap";
+
+@mixin escrever {
+	@-webkit-keyframes typing {
+		from {
+			width: 0;
+		}
+
+		to {
+			width: 375px;
+		}
+	}
+
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+
+		to {
+			width: 370px;
+		}
+	}
+}
+
+@mixin flutuar {
+	@-webkit-keyframes float {
+		0% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+
+		50% {
+			-webkit-transform: translateY(-30px);
+			transform: translateY(-30px);
+		}
+
+		100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes float {
+		0% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+
+		50% {
+			-webkit-transform: translateY(-30px);
+			transform: translateY(-30px);
+		}
+
+		100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+	}
+}
+
+@mixin piscar {
+	@-webkit-keyframes blinkCursor {
+		from {
+			border-right-color: rgb(255 255 255 / 75%);
+		}
+
+		to {
+			border-right-color: transparent;
+		}
+	}
+
+	@keyframes blinkCursor {
+		from {
+			border-right-color: rgb(255 255 255 / 75%);
+		}
+
+		to {
+			border-right-color: transparent;
+		}
+	}
+}
+
+@mixin glow {
+	@-webkit-keyframes glowing {
+		0% {
+			background-position: 0 0;
+		}
+
+		50% {
+			background-position: 400% 0;
+		}
+
+		100% {
+			background-position: 0 0;
+		}
+	}
+
+	@keyframes glowing {
+		0% {
+			background-position: 0 0;
+		}
+
+		50% {
+			background-position: 400% 0;
+		}
+
+		100% {
+			background-position: 0 0;
+		}
+	}
+}

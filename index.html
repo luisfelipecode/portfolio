@@ -3,185 +3,206 @@
 
 <head>
 	<meta charset="UTF-8">
+	<title>Luis Felipe | Frontend developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>luis felipe | Frontend developer</title>
-	<meta name="author" content="Luis Felipe">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<meta name="description"
 		content="Meu nome é Luis felipe, desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO.">
 	<meta name="keywords"
-		content="sites, web, desenvolvimento, frontend, luis felipe, programador, front-end, freelancer, freela, website, portfólio">
-	<meta name="copyright" content="luisfelipecode 2022">
-	<meta http-equiv="content-language" content="pt-br">
-	<link href="./src/css/style.css" rel="stylesheet">
-	<link href="./src/css/responsivo.css" rel="stylesheet">
-	<link href="./src/css/menu-mobile.css" rel="stylesheet">
+		content="sites, web, frontend,desenvolvimento, luis felipe, programador, front-end, website, portfólio">
+	<meta name="language" content="Portuguese">
+	<meta name="author" content="Luis  Felipe">
+	<link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon-16x16.png">
+	<link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+	<link rel="manifest" href="./src/img/site.webmanifest">
 	<script src="https://unpkg.com/scrollreveal"></script>
+	<link href="./src/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
 	<header class="header" id="header">
 		<div class="header-container">
-			<a class="logo" href="#">Portfólio</a>
+			<a class="logo" href="#">Luis Felipe</a>
 			<nav id="nav">
 				<button id="btn-mobile" aria-controls="menu" aria-expanded="false" aria-haspopup="true" aria-label="Abrir Menu">
 					<span id="hamburger"></span>
 				</button>
-				<ul class="menu" id="menu" role="menu">
-					<li><a href="#header">Home</a></li>
+				<ul class="menu" id="menu">
+					<li><a href="#home">Home</a></li>
 					<li><a href="#sobremin">Sobre mim</a></li>
 					<li><a href="#experiencia">Experiência</a></li>
 					<li><a href="#projetos">Projetos</a></li>
 				</ul>
 			</nav>
 		</div>
-		<div class="header-info">
-			<div class="header-info-item">
-				<h4>olá, eu sou</h4>
-				<h1 class="typing-animation">luis felipe</h1>
-				<h4>Desenvolvedor Front-end.</h4>
-			</div>
-			<div class="header-info-icons">
-				<a href="#"><img src="./src/img/linkedin.svg" alt="icone linkedin"><button>
-						linkedin
-					</button>
-				</a>
-				<a class="link-icon" href="#"><img src="./src/img/github.svg" alt="icone github"><button>
-						github
-					</button>
-				</a>
-			</div>
-		</div>
-		<img class="bg" src="./src/img/bg.svg" alt="img background">
 	</header>
 
-	<section class="info-sobremin" id="sobremin">
-		<section class="section-container">
-			<div class="my-profile">
-				<img src="https://avatars.githubusercontent.com/u/86485826?v=4" title="my profile photo" alt="minha foto"
-					width="370" height="370">
-			</div>
-			<div class="sobremin">
-				<h3>Sobre Mim</h3>
-				<h4>Teresina, Brasil</h4>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia
-					eveniet, recusandae ipsum magni quo est illo consectetur dignissimos
-					corporis, odit voluptate, porro debitis.
-				</p>
-				<div class="social">
-					<a href="#"><img src="./src/img/Vector.svg" alt="icon twitter"></a>
-					<a href="#"><img src="./src/img/twitch.svg" alt="icon twitch"></a>
-					<a href="#"><img src="./src/img/youtube.svg" alt="icon youtube"></a>
-					<a href="#"><img src="./src/img/figma.svg" alt="icon figma"></a>
-					<a href="#"><img src="./src/img/codepen.svg" alt="icon codepen"></a>
-					<a href="#"><img src="./src/img/face.svg" alt="icon facebook"></a>
+	<main>
+		<div class="main-container">
+			<div class="home" id="home">
+				<div class="main-info">
+					<div class="main-info-item">
+						<p>olá, eu sou</p>
+						<h1 class="typing-animation">luis felipe</h1>
+						<h2>Desenvolvedor Front-end.</h2>
+					</div>
+					<div class="main-info-icons">
+						<a href="https://www.linkedin.com/in/luis-felipe-ab42431b8/" target="_blank" rel="noopener"><img
+								src="./src/icons/linkedin.svg" alt="icone linkedin" width="27" height="auto"><button>
+								linkedin
+							</button>
+						</a>
+						<a class="link-icon" href="https://github.com/luisfelipecode" target="_blank" rel="noopener"><img
+								src="./src/icons/github.svg" alt="icone github" width="27" height="auto"><button>
+								github
+							</button>
+						</a>
+					</div>
 				</div>
-				<div class="contato-social">
-					<a href="#"><img src="./src/img/file.svg" alt="icon file"><span>Currículo</span></a>
-					<a href="#"><img src="./src/img/mail.svg" alt="icon E-mail"><span>E-mail</span></a>
-				</div>
+				<img loading="lazy" class="bg" src="./src/img/bg.svg" width="600" height="auto" alt="img background">
 			</div>
-		</section>
-	</section>
 
-	<section class="experiencia" id="experiencia">
-		<h2>EXPERIÊNCIA</h2>
-		<div class="divisao">
-			<ul class="xp">
-				<li class="li ativo">Curso TI</li>
-				<li class="li">Projeto Pessoal</li>
-				<li class="li">Em aberto</li>
-				<li class="li">Em aberto</li>
-			</ul>
-			<div class="detalhes">
-				<div>
-					<h2 class="titulo">Técnico em informática</h2>
-					<p class="data">Fev 2020 - 2022</p>
-				</div>
-				<p class="local">UFPI/CTT COLÉGIO TÉCNICO DE TERESINA</p>
-				<p class="desc desc2">
-					No curso técnico em informática aprendi várias linguagens de
-					programação (PHP,PYTHON), linguagem de marcação (HTML5) e linguagem
-					de estilização (CSS3), tive também aprendizados com banco de dados
-					com SQL por meio do MySQL. E como um bom curso de informática,
-					aprendi a fazer manutenção e formatação desktops.
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="projetos" id="projetos">
-		<div class="projetos-container">
-			<h1>Projetos</h1>
-			<div class="projetos-list">
-				<div class="projeto">
-					<img src="./src/img/Rectangle 19.svg" alt="projeto 1">
-					<div class="projeto-info">
-						<h2>Encurtador de Links</h2>
+			<section class="info-sobremin" id="sobremin">
+				<section class="section-container">
+					<div class="my-profile">
+						<img src="https://avatars.githubusercontent.com/u/86485826?v=4" title="my profile photo" alt="minha foto"
+							loading="lazy" width="370" height="370">
+					</div>
+					<div class="sobremin">
+						<h3>Sobre Mim</h3>
+						<h4>Teresina, Brasil</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Phasellus blandit interdum odio eu varius.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia
+							eveniet, recusandae ipsum magni quo est illo consectetur dignissimos
+							corporis, odit voluptate, porro debitis.
 						</p>
-						<div class="projetos-links">
-							<p>ReactJs</p>
-							<a href="https://shorten-links.vercel.app/" target="_blank"><img src="./src/img/link.svg"
-									alt="icon link"><button class="btn-projeto">
-									Visualizar
-								</button>
-							</a>
+						<div class="social">
+							<a href="#"><img src="./src/icons/Vector.svg" width="30" height="auto" alt="icon twitter"></a>
+							<a href="#"><img src="./src/icons/twitch.svg" width="30" height="auto" alt="icon twitch"></a>
+							<a href="#"><img src="./src/icons/youtube.svg" width="30" height="auto" alt="icon youtube"></a>
+							<a href="#"><img src="./src/icons/figma.svg" width="30" height="auto" alt="icon figma"></a>
+							<a href="#"><img src="./src/icons/codepen.svg" width="30" height="auto" alt="icon codepen"></a>
+							<a href="#"><img src="./src/icons/face.svg" width="19" height="auto" alt="icon facebook"></a>
+						</div>
+						<div class="contato-social">
+							<a href="#"><img src="./src/icons/file.svg" width="30" height="auto"
+									alt="icon file"><span>Currículo</span></a>
+							<a href="#"><img src="./src/icons/mail.svg" width="30" height="auto"
+									alt="icon E-mail"><span>E-mail</span></a>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section class="experiencia" id="experiencia">
+				<h2>EXPERIÊNCIA</h2>
+				<div class="divisao">
+					<ul class="xp">
+						<li class="li ativo">Curso TI</li>
+						<li class="li">Projeto Pessoal</li>
+						<li class="li">Em aberto</li>
+						<li class="li">Em aberto</li>
+					</ul>
+					<div class="detalhes">
+						<div>
+							<h2 class="titulo">Técnico em informática</h2>
+							<p class="data">Fev 2020 - 2022</p>
+						</div>
+						<p class="local">UFPI/CTT COLÉGIO TÉCNICO DE TERESINA</p>
+						<p class="desc desc2">
+							No curso técnico em informática aprendi várias linguagens de
+							programação (PHP,PYTHON), linguagem de marcação (HTML5) e linguagem
+							de estilização (CSS3), tive também aprendizados com banco de dados
+							com SQL por meio do MySQL. E como um bom curso de informática,
+							aprendi a fazer manutenção e formatação desktops.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="projetos" id="projetos">
+				<div class="projetos-container">
+					<h2>Projetos</h2>
+					<div class="projetos-list">
+						<div class="projeto">
+							<img src="./src/img/Rectangle 19.svg" alt="projeto 1">
+							<div class="projeto-info">
+								<h2>Encurtador de Links</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Phasellus blandit interdum odio eu varius.
+								</p>
+								<div class="projetos-links">
+									<p>ReactJs</p>
+									<a href="https://shorten-links.vercel.app/" target="_blank" rel="noopener"><img
+											src="./src/icons/link.svg" alt="icon link"><button class="btn-projeto">
+											Visualizar
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="projeto">
+							<img src="./src/img/Rectangle 19.svg" alt="projeto 1">
+							<div class="projeto-info">
+								<h2>Clone do Spotify</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Phasellus blandit interdum odio eu varius.
+								</p>
+								<div class="projetos-links">
+									<p>HTML, CSS</p>
+									<a href="https://github.com/luisfelipecode/spotify-clone" target="_blank" rel="noopener"><img
+											src="./src/icons/link.svg" alt="icon link"><button class="btn-projeto">
+											Visualizar
+										</button>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="projeto">
-					<img src="./src/img/Rectangle 19.svg" alt="projeto 1">
-					<div class="projeto-info">
-						<h2>Clone do Spotify</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Phasellus blandit interdum odio eu varius.
-						</p>
-						<div class="projetos-links">
-							<p>HTML, CSS</p>
-							<a href="https://github.com/luisfelipecode/spotify-clone" target="_blank"><img src="./src/img/link.svg"
-									alt="icon link"><button class="btn-projeto">
-									Visualizar
-								</button>
-							</a>
+				<a class="repos" href="https://github.com/luisfelipecode?tab=repositories" target="_blank"
+					rel="noopener">Repositórios no GitHub
+				</a>
+			</section>
+
+			<section class="contato" id="contato">
+				<div class="contato-container">
+					<h2>👋 Entre em Contato</h2>
+					<form class="form">
+						<div class="input-group">
+							<label for="nome">Nome</label>
+							<input type="text" placeholder="Nome" id="nome">
+							<label for="email">E-mail</label>
+							<input type="text" id="email" placeholder="E-mail">
+							<label for="msg">Mensagem</label>
+							<input class="input-msg" type="text" id="msg" placeholder="Mensagem">
 						</div>
+						<button class="btn-contato">Enviar</button>
+					</form>
+				</div>
+			</section>
+			<footer>
+				<div class="footer-container">
+					<div class="footer-info">
+						<p>@ 2022 - Luis Felipe</p>
+						<p>
+							Powered by
+							<img src="./src/icons/iuricode-logo-footer 1.svg" alt="icon link" loading="lazy">
+						</p>
 					</div>
 				</div>
-			</div>
+				<img class="scroll" src="./src/icons/scroll-top.svg" alt="icone scroll" onclick="subirTopo()">
+			</footer>
 		</div>
-		<a class="repos" href="https://github.com/luisfelipecode?tab=repositories" target="_blank">Repositórios no
-			GitHub</a>
-	</section>
+	</main>
 
-	<section class="contato" id="contato">
-		<div class="contato-container">
-			<h2>👋 manda um salve!</h2>
-			<form class="form">
-				<div class="input-group">
-					<input type="text" placeholder="Nome">
-					<input type="text" placeholder="E-mail">
-					<input class="input-msg" type="text" placeholder="Mensagem">
-				</div>
-				<button class="btn-contato">Enviar</button>
-			</form>
-		</div>
-	</section>
-	<footer>
-		<div class="footer-container">
-			<div class="footer-info">
-				<p>@ 2022 - Luis Felipe</p>
-				<p>
-					Powered by
-					<img src="./src/img/iuricode-logo-footer 1.svg" alt="icon link">
-				</p>
-			</div>
-		</div>
-		<img class="scroll" src="./src/img/scroll-top.svg" alt="icone scroll" onclick="subirTopo()">
-	</footer>
 	<script src="./src/js/index.js"></script>
 	<script src="./src/js/mobile.js"></script>
 </body>

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: $background-color_1;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: $background-color_2;
+}
+
+::-moz-selection {
+  background: #6518b4;
+  color: $color_1;
+}
+
+::selection {
+  background: #6518b4;
+  color: $color_1;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  cursor: pointer;
+}
+
+input {
+  outline: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: $font-family_1;
+}
+
+.divisao {
+  visibility: hidden;
+}
+
+.projetos-container {
+  visibility: hidden;
+}

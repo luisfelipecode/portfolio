@@ -1,17 +1,1 @@
-const btnMobile = document.getElementById('btn-mobile');
-
-function toggleMenu(event) {
-	if (event.type === 'touchstart') event.preventDefault();
-	const nav = document.getElementById('nav');
-	nav.classList.toggle('active');
-	const active = nav.classList.contains('active');
-	event.currentTarget.setAttribute('aria-expanded', active);
-	if (active) {
-		event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-	} else {
-		event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-	}
-}
-
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+const btnMobile = document.getElementById("btn-mobile"); function toggleMenu(t) { "touchstart" === t.type && t.preventDefault(); const e = document.getElementById("nav"); e.classList.toggle("active"); const n = e.classList.contains("active"); t.currentTarget.setAttribute("aria-expanded", n), n ? t.currentTarget.setAttribute("aria-label", "Fechar Menu") : t.currentTarget.setAttribute("aria-label", "Abrir Menu") } btnMobile.addEventListener("click", toggleMenu), btnMobile.addEventListener("touchstart", toggleMenu);
