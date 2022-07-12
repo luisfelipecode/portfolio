@@ -6,8 +6,8 @@
 	<title>Luis Felipe | Frontend developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<meta name="description"
 		content="Meu nome é Luis felipe, desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO.">
@@ -15,11 +15,11 @@
 		content="sites, web, frontend,desenvolvimento, luis felipe, programador, front-end, website, portfólio">
 	<meta name="language" content="Portuguese">
 	<meta name="author" content="Luis  Felipe">
-	<link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon-16x16.png">
-	<link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
-	<link rel="manifest" href="./src/img/site.webmanifest">
+	<link href="./src/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<link type="image/png" href="./src/img/favicon-32x32.png" rel="icon" sizes="32x32">
+	<link type="image/png" href="./src/img/favicon-16x16.png" rel="icon" sizes="16x16">
+	<link type="image/x-icon" href="./src/img/favicon.ico" rel="shortcut icon">
+	<link href="./src/img/site.webmanifest" rel="manifest">
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<link href="./src/css/style.css" rel="stylesheet">
 </head>
@@ -65,7 +65,7 @@
 						</a>
 					</div>
 				</div>
-				<img loading="lazy" class="bg" src="./src/img/bg.svg" width="600" height="auto" alt="img background">
+				<img class="bg" src="./src/img/bg.svg" alt="img background" loading="lazy" width="600" height="auto">
 			</div>
 
 			<section class="info-sobremin" id="sobremin">
@@ -83,18 +83,18 @@
 							corporis, odit voluptate, porro debitis.
 						</p>
 						<div class="social">
-							<a href="#"><img src="./src/icons/Vector.svg" width="30" height="auto" alt="icon twitter"></a>
-							<a href="#"><img src="./src/icons/twitch.svg" width="30" height="auto" alt="icon twitch"></a>
-							<a href="#"><img src="./src/icons/youtube.svg" width="30" height="auto" alt="icon youtube"></a>
-							<a href="#"><img src="./src/icons/figma.svg" width="30" height="auto" alt="icon figma"></a>
-							<a href="#"><img src="./src/icons/codepen.svg" width="30" height="auto" alt="icon codepen"></a>
-							<a href="#"><img src="./src/icons/face.svg" width="19" height="auto" alt="icon facebook"></a>
+							<a href="#"><img src="./src/icons/Vector.svg" alt="icon twitter" width="30" height="auto"></a>
+							<a href="#"><img src="./src/icons/twitch.svg" alt="icon twitch" width="30" height="auto"></a>
+							<a href="#"><img src="./src/icons/youtube.svg" alt="icon youtube" width="30" height="auto"></a>
+							<a href="#"><img src="./src/icons/figma.svg" alt="icon figma" width="30" height="auto"></a>
+							<a href="#"><img src="./src/icons/codepen.svg" alt="icon codepen" width="30" height="auto"></a>
+							<a href="#"><img src="./src/icons/face.svg" alt="icon facebook" width="19" height="auto"></a>
 						</div>
 						<div class="contato-social">
-							<a href="#"><img src="./src/icons/file.svg" width="30" height="auto"
-									alt="icon file"><span>Currículo</span></a>
-							<a href="mailto:lluysfelipe86@gmail.com"><img src="./src/icons/mail.svg" width="30" height="auto"
-									alt="icon E-mail"><span>E-mail</span></a>
+							<a href="#"><img src="./src/icons/file.svg" alt="icon file" width="30"
+									height="auto"><span>Currículo</span></a>
+							<a href="mailto:lluysfelipe86@gmail.com"><img src="./src/icons/mail.svg" alt="icon E-mail" width="30"
+									height="auto"><span>E-mail</span></a>
 						</div>
 					</div>
 				</section>
@@ -105,7 +105,7 @@
 				<div class="divisao">
 					<ul class="xp">
 						<li class="li ativo">Curso TI</li>
-						<li class="li">Projeto Pessoal</li>
+						<li class="li">Em aberto</li>
 						<li class="li">Em aberto</li>
 						<li class="li">Em aberto</li>
 					</ul>
@@ -131,17 +131,14 @@
 					<h2>Projetos</h2>
 					<div class="projetos-list">
 						<div class="projeto">
-							<img src="./src/img/Rectangle 19.svg" alt="projeto 1">
+							<img class="image-project" src="./src/img/Rectangle19.svg" alt="projeto 1">
 							<div class="projeto-info">
-								<h2>Encurtador de Links</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Phasellus blandit interdum odio eu varius.
-								</p>
+								<h2 class="name-project"></h2>
+								<p class="description"></p>
 								<div class="projetos-links">
-									<p>ReactJs</p>
-									<a href="https://shorten-links.vercel.app/" target="_blank" rel="noopener"><img
-											src="./src/icons/link.svg" alt="icon link"><button class="btn-projeto">
+									<p class="technologies">...</p>
+									<a class="gitHub-link" href target="_blank" rel="noopener"><img src="./src/icons/link.svg"
+											alt="icon link"><button class="btn-projeto">
 											Visualizar
 										</button>
 									</a>
@@ -149,17 +146,29 @@
 							</div>
 						</div>
 						<div class="projeto">
-							<img src="./src/img/Rectangle 19.svg" alt="projeto 1">
+							<img class="image-project" src="./src/img/Rectangle19.svg" alt="projeto 1">
 							<div class="projeto-info">
-								<h2>Clone do Spotify</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Phasellus blandit interdum odio eu varius.
-								</p>
+								<h2 class="name-project"></h2>
+								<p class="description"></p>
 								<div class="projetos-links">
-									<p>HTML, CSS</p>
-									<a href="https://github.com/luisfelipecode/spotify-clone" target="_blank" rel="noopener"><img
-											src="./src/icons/link.svg" alt="icon link"><button class="btn-projeto">
+									<p class="technologies"></p>
+									<a class="gitHub-link" href target="_blank" rel="noopener"><img src="./src/icons/link.svg"
+											alt="icon link"><button class="btn-projeto">
+											Visualizar
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="projeto">
+							<img class="image-project" src="./src/img/Rectangle19.svg" alt="projeto 1">
+							<div class="projeto-info">
+								<h2 class="name-project"></h2>
+								<p class="description"></p>
+								<div class="projetos-links">
+									<p class="technologies"></p>
+									<a class="gitHub-link" href="https://github.com/luisfelipecode/lista-tarefas" target="_blank"
+										rel="noopener"><img src="./src/icons/link.svg" alt="icon link"><button class="btn-projeto">
 											Visualizar
 										</button>
 									</a>
@@ -179,11 +188,11 @@
 					<form class="form">
 						<div class="input-group">
 							<label for="nome">Nome</label>
-							<input type="text" placeholder="Nome" id="nome">
+							<input id="nome" type="text" placeholder="Nome">
 							<label for="email">E-mail</label>
-							<input type="text" id="email" placeholder="E-mail">
+							<input id="email" type="text" placeholder="E-mail">
 							<label for="msg">Mensagem</label>
-							<input class="input-msg" type="text" id="msg" placeholder="Mensagem">
+							<input class="input-msg" id="msg" type="text" placeholder="Mensagem">
 						</div>
 						<button class="btn-contato">Enviar</button>
 					</form>
@@ -195,7 +204,7 @@
 						<p>@ 2022 - Luis Felipe</p>
 						<p>
 							Powered by
-							<img src="./src/icons/iuricode-logo-footer 1.svg" alt="icon link" loading="lazy">
+							<img src="./src/icons/iuricode-logo-footer1.svg" alt="icon link" loading="lazy">
 						</p>
 					</div>
 				</div>
@@ -204,8 +213,9 @@
 		</div>
 	</main>
 
-	<script src="./src/js/index.js"></script>
-	<script src="./src/js/mobile.js"></script>
+	<script src="./dist/js/index.js"></script>
+	<script src="./dist/js/mobile.js"></script>
+	<script src="./dist/js/data.js"></script>
 </body>
 
 </html>

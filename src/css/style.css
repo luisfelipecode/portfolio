@@ -1,9 +1,9 @@
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap";
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -13,7 +13,7 @@
 
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: #0000002c;
+  background-color: rgba(0, 0, 0, 0.1725490196);
 }
 
 ::-moz-selection {
@@ -80,7 +80,7 @@ body {
   left: 0;
   position: fixed;
   z-index: 999;
-  border-bottom: 1px solid #72727e33;
+  border-bottom: 1px solid rgba(114, 114, 126, 0.2);
 }
 .header .logo {
   color: #00d2df;
@@ -308,7 +308,6 @@ main .main-container .main-info .main-info-icons button::after {
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
-
   #nav.active #menu {
     height: calc(100vh - 70px);
     visibility: visible;
@@ -328,7 +327,6 @@ main .main-container .main-info .main-info-icons button::after {
     transform: rotate(-135deg);
     top: -7px;
   }
-
   #btn-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -341,7 +339,6 @@ main .main-container .main-info .main-info-icons button::after {
     gap: 0.5rem;
     color: #fff;
   }
-
   #hamburger {
     border-top: 2px solid;
     width: 30px;
@@ -370,7 +367,6 @@ main .main-container .main-info .main-info-icons button::after {
     transition: 0.3s;
     position: relative;
   }
-
   .header .header-container .menu li a::after {
     position: absolute;
     bottom: 0;
@@ -515,6 +511,7 @@ main .main-container .main-info .main-info-icons button::after {
   color: #fff;
   gap: 1.625rem;
   width: 100%;
+  height: 37.5rem;
   padding: 6.25rem 0 6.25rem 13%;
   background: #121212;
 }
@@ -682,7 +679,6 @@ main .main-container .main-info .main-info-icons button::after {
   .experiencia .divisao .detalhes {
     width: 100%;
   }
-
   .gray-light .experiencia .divisao ul li {
     border: none;
     border-bottom: 2px solid #151515;
@@ -707,13 +703,14 @@ main .main-container .main-info .main-info-icons button::after {
   background: #151515;
   padding: 20px;
   width: 100%;
-  height: auto;
+  height: 100%;
   color: #fff;
   position: relative;
 }
 .projetos .projetos-container {
   max-width: 1150px;
   margin: auto;
+  width: 100%;
 }
 .projetos .projetos-container > h2 {
   font-family: "Inter", arial, helvetica, verdana, sans-serif;
@@ -740,11 +737,16 @@ main .main-container .main-info .main-info-icons button::after {
 }
 
 .projetos-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 3rem;
+  max-width: 71.875rem;
+  width: 100%;
+  margin: auto;
   margin-top: 20px;
 }
 .projetos-list .projeto ~ img {
@@ -759,8 +761,10 @@ main .main-container .main-info .main-info-icons button::after {
   margin-left: 25px;
 }
 .projetos-list .projeto > img {
-  border-left: 4px solid #00d2df;
+  border-left: 4px solid rgb(0, 210, 223);
   max-width: 100%;
+  width: 25rem;
+  height: 12.5rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -784,7 +788,7 @@ main .main-container .main-info .main-info-icons button::after {
   max-width: 100%;
 }
 .projeto .projeto-info > p {
-  height: 60px;
+  height: 7.1875rem;
   font-family: "Inter", arial, helvetica, verdana, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -792,7 +796,8 @@ main .main-container .main-info .main-info-icons button::after {
   line-height: 26px;
   color: #c4c4c4;
   margin: 1rem 0 1rem 1.7rem;
-  width: 60%;
+  width: 64%;
+  text-align: justify;
   margin-bottom: 20px;
 }
 
@@ -815,6 +820,7 @@ main .main-container .main-info .main-info-icons button::after {
   text-transform: uppercase;
   margin-left: 25px;
   padding: 10px 0;
+  margin-top: 10px;
 }
 .projeto-info .projetos-links button {
   height: 50px;
@@ -998,7 +1004,7 @@ footer .footer-container {
   max-width: 1150px;
   margin: auto;
   padding: 20px;
-  border-top: 1px solid #72727e33;
+  border-top: 1px solid rgba(114, 114, 126, 0.2);
 }
 footer .footer-container .footer-info {
   display: -webkit-box;
@@ -1125,17 +1131,14 @@ footer .footer-container .footer-info p {
   .bg {
     display: none;
   }
-
   main .main-container .home {
     padding: 0 4.375rem;
     text-align: center;
   }
-
   .experiencia .divisao {
     width: 100%;
     margin: auto;
   }
-
   .header .header-container {
     margin-bottom: 6.25rem;
   }
@@ -1143,22 +1146,18 @@ footer .footer-container .footer-info p {
     text-align: center;
     margin: auto;
   }
-
   .main-info .main-info-item h1 {
     width: 90%;
     margin: auto;
     width: 100%;
   }
-
   .info-sobremin {
     height: 1000px;
   }
-
   .my-profile {
     margin: auto;
     text-align: center;
   }
-
   .sobremin {
     text-align: center;
     margin: auto;
@@ -1176,12 +1175,10 @@ footer .footer-container .footer-info p {
     text-align: justify;
     margin: auto;
   }
-
   .projetos .projetos-container h1 {
     margin: auto;
     left: 0;
   }
-
   .projetos-list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1195,7 +1192,6 @@ footer .footer-container .footer-info p {
     text-align: center;
     margin: 30px auto;
   }
-
   .projeto {
     margin: auto;
   }
@@ -1205,7 +1201,6 @@ footer .footer-container .footer-info p {
     height: auto;
     margin: auto;
   }
-
   .projeto-info .projetos-links > p {
     text-align: center;
   }
@@ -1215,7 +1210,6 @@ footer .footer-container .footer-info p {
   .projeto-info .projetos-links .btn-projeto {
     width: 250px;
   }
-
   .form input[type=text] {
     width: 100%;
   }
@@ -1228,7 +1222,6 @@ footer .footer-container .footer-info p {
     width: 100%;
     margin-bottom: 50px;
   }
-
   main {
     width: 100%;
   }

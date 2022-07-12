@@ -2,13 +2,14 @@
 	background: $color_1;
 	padding: 20px;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	color: $color_4;
 	position: relative;
 
 	.projetos-container {
 		max-width: 1150px;
 		margin: auto;
+		width: 100%;
 
 		>h2 {
 			font-family: $font-family_1;
@@ -38,11 +39,16 @@
 }
 
 .projetos-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	-webkit-column-gap: 1rem;
+	-moz-column-gap: 1rem;
+	column-gap: 1rem;
+	row-gap: 3rem;
+	max-width: 71.875rem;
+	width: 100%;
+	margin: auto;
 	margin-top: 20px;
 
 	.projeto~img {
@@ -62,6 +68,8 @@
 		>img {
 			border-left: 4px solid rgb(0 210 223);
 			max-width: 100%;
+			width: 25rem;
+			height: 12.5rem;
 			-webkit-transition: 0.5s;
 			-o-transition: 0.5s;
 			transition: 0.5s;
@@ -94,15 +102,16 @@
 
 	.projeto-info {
 		>p {
-			height: 60px;
-			font-family: $font-family_1;
+			height: 7.1875rem;
+			font-family: "Inter", arial, helvetica, verdana, sans-serif;
 			font-style: normal;
 			font-weight: 300;
 			font-size: 1rem;
 			line-height: 26px;
-			color: $color-gray-light;
+			color: #c4c4c4;
 			margin: 1rem 0 1rem 1.7rem;
-			width: 60%;
+			width: 64%;
+			text-align: justify;
 			margin-bottom: 20px;
 		}
 	}
@@ -128,6 +137,7 @@
 			text-transform: uppercase;
 			margin-left: 25px;
 			padding: 10px 0;
+			margin-top: 10px;
 		}
 
 		button {
