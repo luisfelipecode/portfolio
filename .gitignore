@@ -94,7 +94,11 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
+<<<<<<< HEAD
 dist
+=======
+
+>>>>>>> 00240b8 (refatoracao total)
 
 # Gatsby files
 .cache/
@@ -103,7 +107,11 @@ dist
 # public
 
 # vuepress build output
+<<<<<<< HEAD
 .vuepress/dist
+=======
+
+>>>>>>> 00240b8 (refatoracao total)
 
 # vuepress v2.x temp and cache directory
 .temp
