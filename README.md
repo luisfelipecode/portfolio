@@ -2,7 +2,7 @@
   💻<br>Meu Portfólio
 </h1>
 
-![Resultado final do projeto](./src/img/localhost-3000.png)
+<img src="./src/img/localhost-3000.png" width="600" height="auto" alt="img projeto" />
 
 &#xa0;
 
@@ -10,7 +10,7 @@
 
 <br>
 
-## :dart: Sobre ##
+## :dart: Sobre
 
 - Home: Nele temos uma breve apresentação sobre min;
 - Sobre mim: Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
@@ -20,7 +20,7 @@
 
 &#xa0;
 
-## :rocket: Tecnologias utilizadas ##
+## :rocket: Tecnologias utilizadas
 
 The following tools were used in this project:
 
